@@ -1,86 +1,92 @@
 [
-  {
-    "id": 1,
-    "planName": "AI Writing Pro",
-    "isBestSeller": true,
-    "description": "Generate high-quality content, blogs, and marketing copy in seconds with advanced AI.",
-    "price": 29,
-    "currency": "$",
-    "billingCycle": "Mo",
-    "features": [
-      "Unlimited AI generations",
-      "50+ writing templates",
-      "Grammar checker"
-    ]
-  },
-  {
-    "id": 2,
-    "planName": "Starter Draft",
-    "isBestSeller": false,
-    "description": "Perfect for individuals looking to dip their toes into AI-assisted writing.",
-    "price": 0,
-    "currency": "$",
-    "billingCycle": "Mo",
-    "features": [
-      "1,000 words per month",
-      "5 basic templates",
-      "Community support"
-    ]
-  },
-  {
-    "id": 3,
-    "planName": "SEO Master",
-    "isBestSeller": false,
-    "description": "Advanced tools specifically designed for ranking your content on page one.",
-    "price": 49,
-    "currency": "$",
-    "billingCycle": "Mo",
-    "features": [
-      "Keyword optimization tool",
-      "Competitor analysis",
-      "Plagiarism scanner"
-    ]
-  },
-  {
-    "id": 4,
-    "planName": "Enterprise Suite",
-    "isBestSeller": false,
-    "description": "Scalable AI solutions for large teams and high-volume content agencies.",
-    "price": 199,
-    "currency": "$",
-    "billingCycle": "Mo",
-    "features": [
-      "Dedicated account manager",
-      "API access",
-      "Custom brand voice training"
-    ]
-  },
-  {
-    "id": 5,
-    "planName": "Creative Studio",
-    "isBestSeller": true,
-    "description": "A hybrid plan for writers who also need AI-generated imagery for their blogs.",
-    "price": 39,
-    "currency": "$",
-    "billingCycle": "Mo",
-    "features": [
-      "Unlimited text generation",
-      "50 AI image credits",
-      "Direct WordPress export"
-    ]
-  },
-  {
-    "id": 6,
-    "planName": "Social Media Ninja",
-    "isBestSeller": false,
-    "description": "Crush your social presence with captions, hashtags, and viral hooks.",
-    "price": 15,
-    "currency": "$",
-    "billingCycle": "Mo",
-    "features": [
-      "Post scheduler",
-      "Trending hashtag suggestions",
-      "Viral hook generator"
-    ]
-  }
+    {
+        "id": 1,
+        "name": "AI Writing Pro",
+        "description": "Generate high-quality content, blogs, and marketing copy in seconds with advanced AI.",
+        "price": 29,
+        "period": "monthly",
+        "tag": "best seller",
+        "tagType": "best-seller",
+        "features": [
+            "Unlimited AI generations",
+            "50+ writing templates",
+            "Grammar checker"
+        ],
+        "icon": "https://example.com/icons/pro-pen.svg"
+    },
+    {
+        "id": 2,
+        "name": "Starter Draft",
+        "description": "Perfect for individuals looking to dip their toes into AI-assisted writing.",
+        "price": 0,
+        "period": "one-time",
+        "tag": "free",
+        "tagType": "new",
+        "features": [
+            "1,000 words per month",
+            "5 basic templates",
+            "Community support"
+        ],
+        "icon": "https://example.com/icons/starter-leaf.svg"
+    },
+    {
+        "id": 3,
+        "name": "SEO Master",
+        "description": "Advanced tools specifically designed for ranking your content on page one.",
+        "price": 490,
+        "period": "yearly",
+        "tag": "popular",
+        "tagType": "popular",
+        "features": [
+            "Keyword optimization tool",
+            "Competitor analysis",
+            "Plagiarism scanner"
+        ],
+        "icon": "https://example.com/icons/seo-chart.svg"
+    },
+    {
+        "id": 4,
+        "name": "Enterprise Suite",
+        "description": "Scalable AI solutions for large teams and high-volume content agencies.",
+        "price": 199,
+        "period": "monthly",
+        "tag": "enterprise",
+        "tagType": "best-seller",
+        "features": [
+            "Dedicated account manager",
+            "API access",
+            "Custom brand voice training"
+        ],
+        "icon": "https://example.com/icons/enterprise-building.svg"
+    },
+    {
+        "id": 5,
+        "name": "Creative Studio",
+        "description": "A hybrid plan for writers who also need AI-generated imagery for their blogs.",
+        "price": 39,
+        "period": "monthly",
+        "tag": "trending",
+        "tagType": "new",
+        "features": [
+            "Unlimited text generation",
+            "50 AI image credits",
+            "Direct WordPress export"
+        ],
+        "icon": "https://example.com/icons/creative-palette.svg"
+    },
+    {
+        "id": 6,
+        "name": "Social Media Ninja",
+        "description": "Crush your social presence with captions, hashtags, and viral hooks.",
+        "price": 150,
+        "period": "yearly",
+        "tag": "limited offer",
+        "tagType": "popular",
+        "features": [
+            "Post scheduler",
+            "Trending hashtag suggestions",
+            "Viral hook generator"
+        ],
+        "icon": "https://example.com/icons/social-share.svg"
+    }
 ]

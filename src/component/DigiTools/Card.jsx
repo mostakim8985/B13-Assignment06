@@ -1,32 +1,33 @@
 import React from 'react';
 
 const Card = ({ info }) => {
-    console.log(info);
+
+
     return (
 
-        <div className="card border w-full bg-base-100 shadow-sm">
+        <div className="card border w-fit sm:px-5 bg-base-100 shadow-sm">
             <div className="card-body">
                 <div className='flex justify-between items-center'>
-                    <h3>hello</h3>
-                    <span className="badge badge-xs badge-warning">Most Popular</span>
+                    <img src={info.icon} alt="" />
+                    <span className={`badge capitalize badge-md ${info.tagType === 'best-seller' ? 'badge-warning' : info.tagType === 'new' ? 'badge-secondary' : 'badge-primary'}`}>{info.tagType}</span>
                 </div>
-                <div className=" space-y-3">
-                    <h2 className="text-3xl font-bold">Premium</h2>
-                    <p className='text-gray-600'>hi hello</p>
-                    <span className="text-xl font-semibold">$29/mo</span>
+                <div className=" mt-5 space-y-3">
+                    <h2 className="text-3xl font-bold">{info.name}</h2>
+                    <p className='text-gray-600 w-2/3'>{info.description}</p>
+                    <span className="text-xl font-semibold">${info.price}/{info.period}</span>
                 </div>
                 <ul className="mt-6 flex flex-col gap-2 text-xs">
                     <li>
                         <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                        <span>High-resolution image generation</span>
+                        <span>{info.features[0]}</span>
                     </li>
                     <li>
                         <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                        <span>Customizable style templates</span>
+                        <span>{info.features[1]}</span>
                     </li>
                     <li>
                         <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                        <span>Batch processing capabilities</span>
+                        <span>{info.features[2]}</span>
                     </li>
 
                 </ul>
