@@ -14,6 +14,7 @@ import Toggle from './Toggle'
 
 
 
+
 const fetchData = async () => {
   const res = await fetch('/public/data.json')
   return res.json()
@@ -39,6 +40,7 @@ function App() {
         <DigiTools fetchInfo={fetchInfo}></DigiTools>
 
       </Suspense>
+
       <Information></Information>
       <PricingCart></PricingCart>
       <Decription></Decription>

@@ -1,152 +1,86 @@
 [
-    {
-        "id": "dt-001",
-        "name": "Notion",
-        "description": "An all-in-one workspace that combines notes, docs, and project management with a native AI assistant for brainstorming and summarization.",
-        "price": 10.00,
-        "period": "monthly",
-        "tag": "Popular",
-        "tagType": "popular",
-        "features": [
-            "AI-powered writing",
-            "Custom databases",
-            "Collaborative wikis"
-        ],
-        "icon": "https://ibb.co.com/DDHKqwpD"
-    },
-    {
-        "id": "dt-002",
-        "name": "Antigravity",
-        "description": "An agent-first IDE designed to coordinate multiple AI agents across an entire codebase for complex full-stack engineering tasks.",
-        "price": 0.00,
-        "period": "one-time",
-        "tag": "New",
-        "tagType": "new",
-        "features": [
-            "Multi-agent coordination",
-            "Unlimited tab completions",
-            "Gemini 3 Pro integration"
-        ],
-        "icon": "https://ibb.co.com/wZtkT180"
-    },
-    {
-        "id": "dt-003",
-        "name": "Framer Motion",
-        "description": "A production-ready motion library for React that simplifies complex UI animations into declarative JavaScript objects.",
-        "price": 0.00,
-        "period": "one-time",
-        "tag": "Best Seller",
-        "tagType": "best seller",
-        "features": [
-            "Spring physics",
-            "Layout transitions",
-            "Gesture recognition"
-        ],
-        "icon": "https://ibb.co.com/ymyGLBr5"
-    },
-    {
-        "id": "dt-004",
-        "name": "ElevenLabs",
-        "description": "An advanced AI voice engine that converts text to high-fidelity, natural-sounding speech for creators and developers.",
-        "price": 22.00,
-        "period": "monthly",
-        "tag": "Popular",
-        "tagType": "popular",
-        "features": [
-            "Voice cloning",
-            "Multi-language support",
-            "Low-latency API"
-        ],
-        "icon": "https://ibb.co.com/LDz6L89D"
-    },
-    {
-        "id": "dt-005",
-        "name": "Midjourney",
-        "description": "The industry standard for high-fidelity AI image generation, known for its artistic flair and hyper-realistic textures.",
-        "price": 30.00,
-        "period": "monthly",
-        "tag": "Best Seller",
-        "tagType": "best seller",
-        "features": [
-            "Text-to-image",
-            "Inpainting tools",
-            "Style reference mixing"
-        ],
-        "icon": "https://ibb.co.com/HLX0jSvw"
-    },
-    {
-        "id": "dt-006",
-        "name": "Perplexity",
-        "description": "An AI-powered search engine that provides real-time answers with cited sources across the web.",
-        "price": 200.00,
-        "period": "yearly",
-        "tag": "Popular",
-        "tagType": "popular",
-        "features": [
-            "Cited sources",
-            "Advanced reasoning mode",
-            "File analysis"
-        ],
-        "icon": "https://ibb.co.com/v6NLjLyJ"
-    },
-    {
-        "id": "dt-007",
-        "name": "Zapier",
-        "description": "Autonomous workflow agents that watch your apps and automate repetitive cross-platform tasks without manual triggers.",
-        "price": 29.99,
-        "period": "monthly",
-        "tag": "New",
-        "tagType": "new",
-        "features": [
-            "6,000+ integrations",
-            "Natural language setup",
-            "Conditional logic"
-        ],
-        "icon": "https://ibb.co.com/KjPgCM8D"
-    },
-    {
-        "id": "dt-008",
-        "name": "Canva Magic",
-        "description": "A comprehensive design suite for non-designers, featuring a massive library of templates and AI design tools.",
-        "price": 120.00,
-        "period": "yearly",
-        "tag": "Best Seller",
-        "tagType": "best seller",
-        "features": [
-            "2M+ templates",
-            "AI video creation",
-            "Magic erase and expansion"
-        ],
-        "icon": "https://ibb.co.com/JwjVcYqj"
-    },
-    {
-        "id": "dt-009",
-        "name": "Tanstack Router",
-        "description": "A fully type-safe routing library for modern web applications that handles complex data loading and navigation.",
-        "price": 0.00,
-        "period": "one-time",
-        "tag": "Popular",
-        "tagType": "popular",
-        "features": [
-            "Type-safe paths",
-            "Automatic data caching",
-            "Nested route support"
-        ],
-        "icon": "https://ibb.co.com/CK7st9k9"
-    },
-    {
-        "id": "dt-010",
-        "name": "Fireflies.ai",
-        "description": "An AI meeting assistant that records, transcribes, and summarizes conversations across Zoom, Teams, and Google Meet.",
-        "price": 19.00,
-        "period": "monthly",
-        "tag": "Popular",
-        "tagType": "popular",
-        "features": [
-            "Automated summaries",
-            "Sentiment analysis",
-            "CRM integration"
-        ],
-        "icon": "https://ibb.co.com/yTXfXwS"
-    }
+  {
+    "id": 1,
+    "planName": "AI Writing Pro",
+    "isBestSeller": true,
+    "description": "Generate high-quality content, blogs, and marketing copy in seconds with advanced AI.",
+    "price": 29,
+    "currency": "$",
+    "billingCycle": "Mo",
+    "features": [
+      "Unlimited AI generations",
+      "50+ writing templates",
+      "Grammar checker"
+    ]
+  },
+  {
+    "id": 2,
+    "planName": "Starter Draft",
+    "isBestSeller": false,
+    "description": "Perfect for individuals looking to dip their toes into AI-assisted writing.",
+    "price": 0,
+    "currency": "$",
+    "billingCycle": "Mo",
+    "features": [
+      "1,000 words per month",
+      "5 basic templates",
+      "Community support"
+    ]
+  },
+  {
+    "id": 3,
+    "planName": "SEO Master",
+    "isBestSeller": false,
+    "description": "Advanced tools specifically designed for ranking your content on page one.",
+    "price": 49,
+    "currency": "$",
+    "billingCycle": "Mo",
+    "features": [
+      "Keyword optimization tool",
+      "Competitor analysis",
+      "Plagiarism scanner"
+    ]
+  },
+  {
+    "id": 4,
+    "planName": "Enterprise Suite",
+    "isBestSeller": false,
+    "description": "Scalable AI solutions for large teams and high-volume content agencies.",
+    "price": 199,
+    "currency": "$",
+    "billingCycle": "Mo",
+    "features": [
+      "Dedicated account manager",
+      "API access",
+      "Custom brand voice training"
+    ]
+  },
+  {
+    "id": 5,
+    "planName": "Creative Studio",
+    "isBestSeller": true,
+    "description": "A hybrid plan for writers who also need AI-generated imagery for their blogs.",
+    "price": 39,
+    "currency": "$",
+    "billingCycle": "Mo",
+    "features": [
+      "Unlimited text generation",
+      "50 AI image credits",
+      "Direct WordPress export"
+    ]
+  },
+  {
+    "id": 6,
+    "planName": "Social Media Ninja",
+    "isBestSeller": false,
+    "description": "Crush your social presence with captions, hashtags, and viral hooks.",
+    "price": 15,
+    "currency": "$",
+    "billingCycle": "Mo",
+    "features": [
+      "Post scheduler",
+      "Trending hashtag suggestions",
+      "Viral hook generator"
+    ]
+  }
 ]
