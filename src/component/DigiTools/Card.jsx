@@ -1,14 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const Card = ({ info }) => {
+const Card = ({ info, cart, setCart }) => {
+    const [isBuy, setIsBuy] = useState(false)
+
+    const handleBuy = () => {
+        setIsBuy(true);
+        const isFound = cart.find(item => item.name === info.name);
+        if(isFound) {
+            return;
+        }
+        setCart([...cart, info])
+    }
 
 
     return (
 
-        <div className="card border w-fit sm:px-5 bg-base-100 shadow-sm">
+        <div className="card border w-fit sm:px-5 md:px-2 bg-base-100 shadow-sm">
             <div className="card-body">
                 <div className='flex justify-between items-center'>
-                    <img src={info.icon} alt="" />
+                    <div className='flex justify-center items-center'>
+
+                        <img className='w-fit' src={info.icon} alt="" />
+                    </div>
                     <span className={`badge capitalize badge-md ${info.tagType === 'best-seller' ? 'badge-warning' : info.tagType === 'new' ? 'badge-secondary' : 'badge-primary'}`}>{info.tagType}</span>
                 </div>
                 <div className=" mt-5 space-y-3">
@@ -32,7 +45,7 @@ const Card = ({ info }) => {
 
                 </ul>
                 <div className="mt-6">
-                    <button className="btn rounded-full btn-primary btn-block">Buy Now</button>
+                    <button onClick={handleBuy} className={`btn rounded-full ${isBuy ? 'btn-error' : 'btn-primary'} btn-block`}>{isBuy ? 'Added to Cart' : 'Buy Now'}</button>
                 </div>
             </div>
         </div>

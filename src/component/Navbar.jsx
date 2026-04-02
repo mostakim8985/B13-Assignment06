@@ -1,10 +1,10 @@
 import React from 'react';
 import Cartimg from '../assets/products/shopping-cart.png'
 
-const Navbar = () => {
+const Navbar = ({cart}) => {
     return (
-        <div>
-            <div className="navbar bg-base-100 shadow-sm">
+        
+            <div className="navbar w-full shadow-sm">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -35,13 +35,13 @@ const Navbar = () => {
 
                     <a className="flex items-center relative mr-3 justify-center">
                         <img src={Cartimg} alt="" /> 
-                        <div className="md:w-5 md:h-5 w-4 h-4 flex items-center justify-center bg-red-500 p-1 rounded-full text-[10px] md:text-[12px] text-white font-semibold absolute -top-2.5 -right-3.5">9</div>
+                        <div className="md:w-5 md:h-5 w-4 h-4 flex items-center justify-center bg-red-500 p-1 rounded-full text-[10px] md:text-[12px] text-white font-semibold absolute -top-2.5 -right-3.5">{cart.length}</div>
                     </a>
                     <a href="#" className='font-semibold md:text-[18px] hover:text-gray-600'>Login</a>
                     <button className='btn btn-primary rounded-full'>Get Started</button>
                 </div>
             </div>
-        </div>
+      
     );
 };
 

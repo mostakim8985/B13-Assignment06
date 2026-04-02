@@ -1,7 +1,7 @@
 import React, { use } from 'react';
 import Card from './Card';
 
-const DigiTools = ({ fetchInfo }) => {
+const DigiTools = ({ fetchInfo,cart,setCart }) => {
     const data = use(fetchInfo);
 
 
@@ -10,7 +10,13 @@ const DigiTools = ({ fetchInfo }) => {
 
 
             {
-                data.map(info => <Card info ={info}></Card>)
+                data.map(info => <Card
+                    key={info.id}
+                    info={info}
+                    cart = {cart}
+                    setCart={setCart}
+                    
+                ></Card>)
             }
 
 

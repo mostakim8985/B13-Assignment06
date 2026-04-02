@@ -1,5 +1,5 @@
 
-import { Suspense } from 'react'
+import { Suspense, useState } from 'react'
 import './App.css'
 import Decription from './component/Decription'
 import DigiTools from './component/DigiTools/DigiTools'
@@ -10,7 +10,8 @@ import Information from './component/Information'
 import Navbar from './component/Navbar'
 import PricingCart from './component/PricingCart'
 import RatingSection from './component/RatingSection'
-import Toggle from './Toggle'
+import Toggle from './component/Toggle'
+import Cart from './component/DigiTools/Cart'
 
 
 
@@ -19,27 +20,41 @@ const fetchData = async () => {
   const res = await fetch('/public/data.json')
   return res.json()
 }
-
+const fetchInfo = fetchData();
 function App() {
-  const fetchInfo = fetchData();
+
+  const [toggle, setToggle] = useState('products');
+  const [cart, setCart] = useState([])
+
+
 
 
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar cart={cart}></Navbar>
       <HeroSection></HeroSection>
       <RatingSection></RatingSection>
       <Headline></Headline>
-      <Toggle></Toggle>
-      <Suspense fallback={
-        <div className='flex mt-20 justify-center items-center'>
-          <span className="loading loading-spinner loading-xl"></span>
-        </div>
-      }>
+      <Toggle toggle={toggle} cart= {cart} setToggle={setToggle}></Toggle>
 
-        <DigiTools fetchInfo={fetchInfo}></DigiTools>
 
-      </Suspense>
+
+      {
+        toggle === 'products' && <DigiTools
+          fetchInfo={fetchInfo}
+          cart={cart}
+          setCart={setCart}
+        ></DigiTools>
+
+      }
+
+      {
+        toggle === 'cart' &&
+
+        <Cart cart={cart}></Cart>
+      }
+
+
 
       <Information></Information>
       <PricingCart></PricingCart>
