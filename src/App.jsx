@@ -51,7 +51,7 @@ function App() {
       {
         toggle === 'cart' &&
 
-        <Cart cart={cart}></Cart>
+        <Cart cart={cart} setCart={setCart}></Cart>
       }
 
 
