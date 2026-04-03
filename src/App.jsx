@@ -12,6 +12,7 @@ import PricingCart from './component/PricingCart'
 import RatingSection from './component/RatingSection'
 import Toggle from './component/Toggle'
 import Cart from './component/DigiTools/Cart'
+import { ToastContainer } from 'react-toastify'
 
 
 
@@ -60,6 +61,8 @@ function App() {
       <PricingCart></PricingCart>
       <Decription></Decription>
       <Footer></Footer>
+
+      <ToastContainer></ToastContainer>
     </>
   )
 }

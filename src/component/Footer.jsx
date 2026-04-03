@@ -76,11 +76,11 @@ const Footer = () => {
 
             <div className='border-t'>
 
-                <footer className="footer md:justify-start justify-center flex sm:footer-horizontal bg-neutral text-neutral-content items-center p-4 px-10">
+                <footer className="footer md:justify-between justify-center flex sm:footer-horizontal bg-neutral text-neutral-content items-center p-4 px-10">
                     <aside className="grid-flow-col items-center">
                         <p className='text-[12px] md:text-[16px]'>Copyright © {new Date().getFullYear()} - All right reserved</p>
                     </aside>
-                    <nav className="md:grid-flow-col hidden gap-4 md:place-self-center md:justify-self-end">
+                    <nav className="md:grid-flow-col gap-4 hidden md:grid md:place-self-center md:justify-self-end">
                         <a href="#">Privacy Policy</a>
                         <a href="#">Terms of Service</a>
                         <a href="#">Cookies</a>

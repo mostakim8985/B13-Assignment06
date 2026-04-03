@@ -1,13 +1,15 @@
 import React from 'react';
 import CartCard from './CartCard';
 import EmplyCart from './EmplyCart';
+import { toast } from 'react-toastify';
 
 const Cart = ({ cart, setCart }) => {
 
     const totalPrice = cart.reduce((sum, item) => sum + item.price, 0);
 
-    const handlePayment = ()=> {
+    const handlePayment = () => {
         setCart([])
+        toast.success("Payment Successful")
     }
 
     return (

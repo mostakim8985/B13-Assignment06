@@ -1,9 +1,11 @@
 import React from 'react';
+import { toast } from 'react-toastify';
 
 const CartCard = ({ item, cart, setCart }) => {
     const hanldleDelete = (item) => {
         const filterArray = cart.filter(i => i.name !== item.name);
         setCart(filterArray);
+        toast.success(`${item.name} Removed`)
     }
     return (
         <div>
