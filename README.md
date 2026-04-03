@@ -1,11 +1,11 @@
 ## Project Name : DigiTools Platform
 
 
-##Description
+## Description
 
 DigiTools Platform is a modern web-based collection of useful digital tools designed to simplify everyday tasks. It provides multiple utilities in a single platform with a clean UI and smooth user experience. The goal of this project is to make productivity tools easily accessible for everyone.
 
-##Technologies Used
+## Technologies Used
  1. React.js
 2.  Vite
 3. Tailwind CSS
