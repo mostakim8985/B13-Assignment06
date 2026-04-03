@@ -4,7 +4,7 @@ import Cartimg from '../assets/products/shopping-cart.png'
 const Navbar = ({cart}) => {
     return (
         
-            <div className="navbar w-full shadow-sm">
+            <div className="navbar navposition w-full shadow-sm">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
