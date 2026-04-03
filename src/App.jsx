@@ -18,7 +18,7 @@ import { ToastContainer } from 'react-toastify'
 
 
 const fetchData = async () => {
-  const res = await fetch('/public/data.json')
+  const res = await fetch('./data.json')
   return res.json()
 }
 const fetchInfo = fetchData();
